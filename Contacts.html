@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<HTML>
+    <HEAD>
+    <meta charset="UTF-8">
+        <TITLE> Contact Us  </TITLE>
+    </HEAD>
+    <style>
+        body{
+            background-image: url(Restaurant.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 50px;
+            padding:0;
+            font-size: 30px;
+        }
+        .navbar ul{
+            overflow: hidden;
+            border-radius: 10px;
+            background-color:#3b2e2e;
+            margin-top: 2px;
+            margin-bottom: 2px;
+        }
+        .navbar li{
+            display:inline-block;
+        }
+        .navbar a{
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .navbar a:hover{
+            background: #3b2e2e;
+            height: 30px;
+        }
+        .button a{
+            display: block;
+            height: 40px;
+            width: 120px;
+            color:black;
+            font-size: 16px;
+            text-decoration: none;
+            font-family:Century;
+            height: 10px;
+            margin:5px;
+            padding:12px 12px;
+            float:right;
+        }
+        input[type=submit] {
+            display: block;
+            height: 40px;
+            width: 120px;
+            border: none;
+            outline: none;
+            color: #3b2e2e;
+            border-bottom: 1 px solid #3b2e2e;
+            margin: 20;
+            font-size: 16px;
+            background: transparent;
+        }
+        input[type=submit]:hover {
+         background-color: #3b2e2e;
+        }
+        input[type=text], select, textarea {
+        width: 75%;
+        padding: 10px;
+        border: 1px solid rgb(255, 252, 252);
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 4px;
+        margin-bottom: 14px;
+        resize: vertical;
+        }
+        input[type=Message], select, textarea {
+        width: 75%;
+        padding: 30px;
+        border: 1px solid rgb(255, 252, 252);
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 4px;
+        margin-bottom: 14px;
+        resize: vertical;
+        }
+        input[type=date], select, textarea {
+        width: 50%;
+        padding: 10px;
+        border: 1px solid rgb(255, 252, 252);
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 4px;
+        margin-bottom: 14px;
+        resize: vertical;
+        }
+        input[type=time], select, textarea {
+        width: 50%;
+        padding: 10px;
+        border: 1px solid rgb(255, 252, 252);
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 4px;
+        margin-bottom: 14px;
+        resize: vertical;
+        }
+        .contacts{
+            align-items: center;
+            color: azure;
+            width: 630px;
+	        height: 320px;
+	        position:fixed;
+	        margin: 50px auto;
+	        background:rgba(65, 57, 57, 0.3);
+	        padding: 50px;
+            overflow: hidden;
+            border: black;
+            border-radius: 300px;
+            border-style:double;
+            right:10%;
+            bottom:10%;
+        }
+        .contactUs{
+            color: aliceblue;
+            align-items: center;
+            width:200px;
+	        height:300px;
+	        position:relative;
+            float:left;
+            right:10%;
+            left:0%;
+	        padding:100px;
+            overflow: hidden;
+            background:rgba(65, 57, 57, 0.3);
+
+        }
+    </style>
+    <body>
+        <div class="navbar">
+            <ul>
+                <li><a href='Home page.html'>Home </a></li>
+                <li><a href='About.html'>About Us</a></li>
+                <li><a href='Menu.html'>Menu</a></li>
+                <li><a href='Our Branches.html'>Our Branches</a></li>
+                <li><a href='Contacts.html'>Contacts</a></li>
+            </ul>
+        </div>
+        <form method="post" class="contacts" >
+            <center>
+            <b for ="name">Name </b><br>
+            <b><input type="text" id="name" placeholder="Enter your name" required=""></b> <br>
+            <b for="email">Email</b><br>
+            <b><input type="text" id="Email" placeholder="Enter Your Valid Email" required=""></b><br>
+            <b for="message">Message</b><br>
+            <b><input type ="Message" id="Message" placeholder="Enter Your Message" required=""></b><br>
+        </center>
+            <center>
+            <button><button type="button" onclick="aftercontact()">Submit</button>
+            </center>
+        </form>
+        <form class="contactUs">
+            <br>
+            <br>
+            <h1 style="color: white; font-size: 36px;">Contact Us</h1><br>
+            <p style="text-align: left; color: rgb(245, 245, 245); font-size: 20px;">Our Address / 6th October ,Giza, Egypt <br>
+            <br>
+            Our Phone : 01234560789
+        </p>
+        </form>
+    </body>
+</HTML>
